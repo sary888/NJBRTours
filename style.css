@@ -1,0 +1,649 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+* {
+	margin: 0;
+	padding: 0;
+	font-family: "Quicksand", sans-serif;
+	box-sizing: border-box;
+}
+
+a {
+	text-decoration: none;
+}
+
+.float-left {
+	float:left;
+}
+.container {
+	width: 1500px;
+	margin: 0 auto;
+}
+
+.container::after {
+	content: "";
+	display: block;
+	clear : both;
+}
+
+.bg-light {
+	background-color: #fefefe;
+}
+
+.clearfix {
+	clear:both;
+}
+
+.page-login {
+	width: 100%;
+	height: 100vh;
+	border:1px solid;
+	background-color: skyblue;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.box {
+	border:1px solid #ddd;
+	background-color: #fff;
+}
+.box-header {
+	padding:16px;
+	border-bottom:1px solid #ddd;
+	background-color: #f2f2f2;
+}
+.box-body {
+	padding:16px;
+}
+.box-footer {
+	border-top:1px solid #ddd;
+	background-color: #f2f2f2;
+	padding:16px;
+}
+.form {
+	margin:15px;
+}
+.form-group {
+	margin-bottom: 15px;
+}
+.form-group label {
+	display: block;
+	margin-bottom: 8px;
+}
+.form-group .input-control {
+	padding:10px 16px;
+	width: 100%;
+	font-size: 16px;
+	border:1px solid #ddd;
+}
+.box-login {
+	width:300px;
+}
+.btn {
+	border:1px solid #ddd;
+	padding:10px 16px;
+	font-size: 16px;
+}
+.btn:hover {
+	cursor: pointer;
+}
+
+.btn-baby-blue{
+	background-color:#A2DCE7 ;
+	color:#fff;
+	border:1px solid #A2DCE7;
+}
+
+.btn-baby-blue:hover {
+	background-color:#003B73;
+
+}
+.text-center {
+	text-align: center !important ;
+}
+.alert {
+	padding:10px 16px;
+	border:1px solid;
+}
+.alert-error {
+	background-color: #FABEC0;
+	border:1px solid #E43D40;
+	color: #E43D40;
+}
+
+.alert-success{
+	background-color: #B1D8B7;
+	border:1px solid #2F5233 ;
+	color: #2F5233;
+}
+.navbar {
+	height: 110px;
+	width: 100%;
+	background-color: #e983d8;
+	position: fixed;
+	top: 0;
+	z-index: 1000;
+}
+.navbar a {
+	color: #fff;
+}
+.nav-brand {
+	display: inline-block;
+	padding:15px 0;
+	margin-right: 16px;
+}
+.nav-menu {
+	display: flex;
+	list-style: none;
+}
+.nav-menu li a {
+	padding:12px;
+	display: inline-block;
+}
+.nav-menu li .dropdown {
+	border:1px solid #ddd;
+	background-color: #fff;
+	list-style: none;
+	position: absolute;
+	display: none;
+}
+.nav-menu li:hover {
+	background-color: palegoldenrod;
+}
+.nav-menu li .dropdown a {
+	color: black;
+}
+.nav-menu li:hover .dropdown li:hover a {
+	color: #fff;
+}
+.nav-menu li:hover .dropdown {
+	display: block;
+}
+.content {
+	padding:10px 0 30px 0;
+}
+.footer {
+	padding:20px 0;
+}
+.table {
+	width :100%;
+	border-collapse: collapse;
+	margin:8px 0;
+}
+.table th,
+.table td {
+	border:1px solid #ddd;
+	padding:10px;
+}
+
+.table td:first-child {
+	width:50px;
+	text-align:center;
+}
+        
+.table td:last-child {
+	width :150px;
+	text-align:center;
+}
+
+.text-red {
+	color:#C85250;
+}
+
+.text-orange {
+	color:#FF8300;
+}
+
+.text.green {
+	color:#76B947;
+}
+
+.input-group:after {
+	content:"";
+	clear:both;
+	display: block;
+}
+.input-group input[type="text"] {
+	width: 90%;
+	padding: 10px;
+	font-size: 16px;
+	float: left;
+	border: 1px solid #ddd;
+}
+
+.input-group input [type="text"]:focus {
+	outline: none;
+}
+
+.input-group button {
+	width:10%;
+	padding:10px;
+	font-size: 16px;
+	float:left;
+	border:1px solid #ddd;
+	border-left:none;
+
+}
+
+.image {
+	border: 1px solid #ddd;
+	padding:5px;
+}
+
+
+.header a {
+	color: white;
+}
+.header {
+	background-color: #000;
+	color: #fff; /* Warna teks putih agar kontras */
+    	padding: 10px 0; /* Padding jika diperlukan */
+	border-bottom:3px solid #d6ad60;
+
+}
+
+.header a:hover {
+	color: gold;
+}
+
+.header-logo {
+	float:  left;
+	line-height: 70px;
+	padding: 5px 0;
+}
+
+.header-logo img {
+    	display: inline-block; /* Menjaga logo dan teks sejajar */
+	float: left;
+	margin-right: 10px;
+}
+
+.header-logo h2 {
+	display: inline-block;
+    	margin-left: 10px; /* Jarak antara logo dan teks */
+    	color: #fff; /* Warna teks putih */
+	float: left;
+}
+
+.header-menu {
+	list-style-type: none; /* Menghapus bullet points */
+    	margin: 0;
+    	padding: 0;
+	float: right;
+	color: black;
+}
+
+.header-menu li {
+	display: inline; /* Menyusun menu secara horizontal */
+    	margin: 0 10px; /* Jarak antar item menu */
+	float: left;
+	list-style: none;
+	padding: 29px 10px;
+}
+.header-menu a {
+    	color: #fff; /* Warna link putih */
+    	text-decoration: none; /* Menghapus garis bawah */
+    	padding: 10px; /* Padding di sekitar link */
+}
+
+.header-menu a:hover {
+    	text-decoration: underline; /* Garis bawah pada hover */
+}
+
+.banner {
+	height: 95vh;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+	opacity: 0.7; 
+}
+
+.banner-text {
+    padding: 25px;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2em; /* Sesuaikan ukuran font sesuai kebutuhan */
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.banner-text h3 {
+        font-size: 30px; /* Atur ukuran sesuai kebutuhan */
+        font-family: 'Berlin Sans FB Demi', sans-serif;
+        margin: 0;
+}
+
+.banner-text p {
+        font-size: 20px; /* Atur ukuran sesuai kebutuhan */
+        font-family: 'Berlin Sans FB Demi', sans-serif;
+        margin: 0;
+}
+
+
+.banner-description {
+        font-size: 10px; /* Ukuran teks bisa disesuaikan */
+        font-family: 'Georgia', serif;
+        font-weight: bold; /* Teks tebal */
+        margin-top: 10px;
+}
+
+.section {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 20px;
+}
+
+.section h3 {
+	padding-bottom: 25px;
+	margin-bottom: 25px;
+	position: relative;
+}
+
+.section h3::after{
+	content: "";
+	display: block;
+	width:60px;
+	border:3px solid red;
+	position: absolute;
+	bottom: 0;
+	left: calc(50% - 30px);
+}
+
+.container2 {
+	background-color: white;
+}
+
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+}
+
+.container3 {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* About Us Section */
+.section.about-us {
+    padding: 60px 0;
+    background-color: black;
+}
+
+.content-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 30px;
+}
+
+.image-wrapper {
+    flex: 1;
+    max-width: 50%;
+}
+
+.image-wrapper img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.text-content, .vision-mission {
+    flex: 1;
+    max-width: 50%;
+}
+
+.text-content h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.text-content p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.vision-mission h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.vision-mission h4 {
+    font-size: 20px;
+    margin-top: 15px;
+}
+
+.vision-mission p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .content-wrapper {
+        flex-direction: column;
+    }
+    
+    .image-wrapper, .text-content, .vision-mission {
+        max-width: 100%;
+    }
+}
+
+.col-4 {
+	min-height: 300px;
+	width: 25%;
+	float: left;
+	padding: 10px;
+}
+
+.thumbnail-box {
+	width: 100%;
+	min-height: 420px;
+	background-color: #efebe0;
+}
+
+.thumbail-img {
+	height: 350px;
+	background-repeat: no-repeat;
+	background-size: cover ;
+}
+
+.thumbnail-text {
+	height: 55px;
+	padding: 5px;
+
+}
+
+/* General container styling */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Title styling */
+h3.text-center {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: white;
+}
+
+/* Grid setup for thumbnails */
+.section {
+    padding: 20px 0;
+}
+.col-5 {
+	min-height: 20px;
+	width: 25%;
+	float: left;
+	padding: 10px;
+}
+
+.thumbnail-box2 {
+    position: relative;
+    overflow: hidden; /* Menyembunyikan bagian gambar yang melebihi kontainer */
+    padding-top: 66.67%; /* Rasio 3:2 (100 / 150 * 100) */
+    background-color: #f0f0f0; /* Warna latar belakang sementara */
+    margin-bottom: 5px; /* Mengurangi jarak bawah antar gambar */
+}
+
+.thumbnail-img2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-size: cover; /* Mengatur gambar agar menutupi seluruh area */
+    background-position: center; /* Memusatkan gambar */
+    transition: transform 0.3s; /* Transisi saat hover */
+}
+
+.thumbnail-link2:hover .thumbnail-img2 {
+    transform: scale(1.05); /* Membesarkan sedikit saat hover */
+}
+
+.thumbnail-text2 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.5); /* Latar belakang transparan untuk teks */
+    color: #fff; /* Warna teks */
+    text-align: center; /* Memusatkan teks */
+}
+
+/* Responsive design */
+@media (max-width: 992px) {
+    .col-4 {
+        max-width: 50%;
+    }
+}
+
+@media (max-width: 768px) {
+    .col-4 {
+        max-width: 100%;
+    }
+}
+
+
+.thumbnail-link {
+	color: #333;
+}
+
+.thumbnail-link:hover {
+	color: red;
+}
+
+#jadwal-paket-umroh {
+	background-color: #f5f5f5;
+}
+
+
+footer {
+	padding:30px;
+	background-color: #d6ad60;
+	color: #fff;
+}
+
+.box-gmaps {
+	float: left;
+	width: 75%;
+}
+
+.mobile-menu-btn {
+	width: 100%;
+	float: left;
+	padding: 10px;
+	display: none;
+}
+
+.box-menu-mobile {
+	background-color: #000; /* Hitam */
+	color: #fff; /* Warna teks putih */
+    	position: fixed; /* Agar tetap di posisi yang sama saat scroll */
+    	top: 0;
+    	left: 0;
+    	width: 100%;
+    	height: 100%;
+    	display: none; /* Sembunyikan secara default */
+    	z-index: 1000; /* Di atas konten lain */
+}
+
+.box-menu-mobile span{
+	color: #fff;
+	padding: 10px;
+	position: absolute;
+	right: 0;
+
+}
+
+.box-menu-mobile ul {
+	margin-top: 50px;
+	 list-style-type: none; /* Menghapus bullet points */
+    	padding: 0;
+}
+
+.box-menu-mobile li {
+    margin: 20px 0; /* Jarak antar item */
+}
+
+.box-menu-mobile a {
+    color: #fff; /* Warna link putih */
+    text-decoration: none; /* Menghapus garis bawah */
+}
+
+.box-menu-mobile a:hover {
+    text-decoration: underline; /* Garis bawah pada hover */
+}
+
+.box-menu-mobile ul li a{
+	padding: 10px;
+	display: inline-block;
+	color: #fff;
+}
+
+/*css mobile*/
+
+@media screen and (max-width: 768px){
+
+	.container{
+		width:100%;
+	}
+
+	.col-4 {
+		width:50%;
+	}
+
+	.thumbnail-text{
+		font-size: 14px;
+	}
+
+	.header-logo{
+		line-height: 50px;
+		padding-left: 10px;
+	}
+
+	.header-logo img {
+		width: 50px;
+	}
+
+	.header-logo h2 {
+		font-size: 20px;
+	}
+
+	.header-menu {
+		display: none;
+	}
+
+	.box-gmaps {
+		width: 100%;
+	}
+
+	.mobile-menu-btn {
+		display: block;
+}
+
